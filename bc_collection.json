@@ -1,0 +1,143 @@
+{
+	"info": {
+		"_postman_id": "377623da-e3ab-4d2e-b807-9a7a0679659c",
+		"name": "postman",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ConvertPrice",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "LY5BBlUBiZwu+wWZGPtVEaKMVW7eG80A//u5i5nDNeE=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/coin/change?amount=1&from=XRP&to=ATOM",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"coin",
+						"change"
+					],
+					"query": [
+						{
+							"key": "amount",
+							"value": "1"
+						},
+						{
+							"key": "from",
+							"value": "XRP"
+						},
+						{
+							"key": "to",
+							"value": "ATOM"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchHistoryData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "If-None-Match",
+						"value": "1234",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "LY5BBlUBiZwu+wWZGPtVEaKMVW7eG80A//u5i5nDNeE=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/coin/history?starttime=2022-04-31 10:08:00&endtime=2022-05-02 17:48:00&currency=USD&target=BTC,USDT",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"coin",
+						"history"
+					],
+					"query": [
+						{
+							"key": "starttime",
+							"value": "2022-04-31 10:08:00"
+						},
+						{
+							"key": "endtime",
+							"value": "2022-05-02 17:48:00"
+						},
+						{
+							"key": "currency",
+							"value": "USD"
+						},
+						{
+							"key": "target",
+							"value": "BTC,USDT"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SearchLatestData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "LY5BBlUBiZwu+wWZGPtVEaKMVW7eG80A//u5i5nDNeE=",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8080/coin/latest?currency=KRW&target=BTC,ETH",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"coin",
+						"latest"
+					],
+					"query": [
+						{
+							"key": "currency",
+							"value": "KRW"
+						},
+						{
+							"key": "target",
+							"value": "BTC,ETH"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
